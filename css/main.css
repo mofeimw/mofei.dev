@@ -1,0 +1,118 @@
+/*
+ * bg: #232530
+ * fg: #F9CEC3
+ * red: #D4516f
+ * blue: #1d8991
+ * purple: #B877DB
+ * gray: #6c6f93
+*/
+
+@font-face {
+    font-family: Moniqa;
+    src: url("../assets/moniqa.otf")
+}
+
+@font-face {
+    font-family: Atkinson;
+    src: url("../assets/atkinson.ttf")
+}
+
+@font-face {
+    font-family: Bicycle;
+    src: url("../assets/bicycle.otf")
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html {
+    background-color: #232530;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-oveflow-style: none;
+    scrollbar-width: none;
+    font-family: Atkinson, sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+.hero {
+    color: #F9CEC3;
+    text-align: center;
+    width: 100vw;
+    height: 75vh;
+}
+
+.hero h1 {
+    color: #D4516f;
+    font-family: Moniqa;
+    font-size: 9.5em;
+    letter-spacing: 0.4rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.hero h2 {
+    padding-top: 8vh;
+    font-family: Bicycle;
+    font-size: 1.7em;
+}
+
+.button {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: #1d8991;
+    text-align: center;
+    font-size: 0.8em;
+    text-decoration: none;
+    line-height: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 3px solid #1d8991;
+    box-sizing: border-box;
+    padding: 15px 32px;
+}
+
+.button:hover, .button:focus {
+    color: #F9CEC3;
+    border-color: #D4516f;
+    background-color: #D4516f;
+    outline: 0;
+}
+
+.info {
+    background-color: white;
+    height: 75vh;
+    padding: 4em;
+}
+
+.info p {
+    margin-bottom: 1.5em;
+    color: #232530;
+    line-height: 1.23rem;
+}
+
+.footer {
+    width: 100vw;
+    height: 10vh;
+}
+
+.footer p {
+    color: #F9CEC3;
+    text-align: center;
+    font-family: Bicycle;
+    font-size: 1.4em;
+    padding-top: 2rem;
+}
