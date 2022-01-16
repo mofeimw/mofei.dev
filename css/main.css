@@ -8,18 +8,38 @@
 */
 
 @font-face {
-    font-family: Moniqa;
-    src: url("../assets/moniqa.otf")
+    font-family: "Gothic A1";
+    src: url("../assets/gothica1.ttf");
 }
 
 @font-face {
-    font-family: Atkinson;
-    src: url("../assets/atkinson.ttf")
+    font-family: "Gothic A1";
+    src: url("../assets/montserrat-light.ttf");
+    font-weight: 300;
 }
 
 @font-face {
-    font-family: Bicycle;
-    src: url("../assets/bicycle.otf")
+    font-family: "Gothic A1";
+    src: url("../assets/gothica1-medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Gothic A1";
+    src: url("../assets/gothica1-semi.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Rota;
+    src: url("../assets/rota-black.otf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Rota;
+    src: url("../assets/rota-bold.otf");
+    font-weight: 600;
 }
 
 * {
@@ -32,10 +52,6 @@
     background: transparent;
 }
 
-html {
-    background-color: #232530;
-}
-
 body::-webkit-scrollbar {
     display: none;
 }
@@ -43,76 +59,90 @@ body::-webkit-scrollbar {
 body {
     -ms-oveflow-style: none;
     scrollbar-width: none;
-    font-family: Atkinson, sans-serif;
-    letter-spacing: 0.1rem;
+    background-color: #6c6f93;
+    height: 100%;
+    width: 100%;
+    font-family: "Gothic A1", sans-serif;
+    letter-spacing: 0.4px;
+    color: #232530;
+}
+
+h1 {
+    font-family: Rota;
+    font-weight: 600;
+    font-size: 4.5em;
+    letter-spacing: 0.04rem;
+    line-height: 0.9em;
+}
+
+a {
+    text-decoration: none;
 }
 
 .hero {
+    background-color: #232530;
+    height: 100vh;
+    width: 47vw;
     color: #F9CEC3;
-    text-align: center;
-    width: 100vw;
-    height: 75vh;
+    position: fixed;
+}
+
+.hero * {
+    margin-left: 6rem;
 }
 
 .hero h1 {
     color: #D4516f;
-    font-family: Moniqa;
-    font-size: 9.5em;
-    letter-spacing: 0.4rem;
-    margin-top: 3rem;
-    margin-bottom: 4rem;
+    margin: 6rem 6rem 0 6rem;
 }
 
-.hero h2 {
-    padding-top: 8vh;
-    font-family: Bicycle;
-    font-size: 1.7em;
+.hero p {
+    margin: 3rem 6rem;
+    font-size: 0.95em;
+    text-align: justify;
+    line-height: 1.7em;
 }
 
 .button {
     display: inline-block;
-    height: 38px;
-    padding: 0 30px;
-    color: #1d8991;
+    height: 3.2rem;
     text-align: center;
-    font-size: 0.8em;
-    text-decoration: none;
-    line-height: 5px;
-    background-color: transparent;
+    font-size: 0.85em;
+    letter-spacing: 1.3px;
+    line-height: 1.15rem;
     border-radius: 5px;
-    border: 3px solid #1d8991;
     box-sizing: border-box;
-    padding: 15px 32px;
+    padding: 18px 32px;
+    color: #F9CEC3;
+    background-color: #1d8991;
 }
 
 .button:hover, .button:focus {
-    color: #F9CEC3;
-    border-color: #D4516f;
-    background-color: #D4516f;
-    outline: 0;
+    text-decoration: underline;
+    text-underline-offset: 1.3px;
 }
 
-.info {
-    background-color: white;
-    height: 75vh;
-    padding: 4em;
+.main {
+    background-color: #6c6f93;
+    height: 140vh;
+    padding: 6rem;
+    margin-left: 47vw;
 }
 
-.info p {
+.main div {
+    margin-bottom: 6rem;
+}
+
+.main h1 {
+    margin-top: 0;
+    font-size: 2.3em;
+    font-weight: 600;
+}
+
+.main p {
     margin-bottom: 1.5em;
     color: #232530;
-    line-height: 1.23rem;
-}
-
-.footer {
-    width: 100vw;
-    height: 10vh;
-}
-
-.footer p {
-    color: #F9CEC3;
-    text-align: center;
-    font-family: Bicycle;
-    font-size: 1.4em;
-    padding-top: 2rem;
+    line-height: 1.5em;
+    text-align: justify;
+    font-weight: 500;
 }
